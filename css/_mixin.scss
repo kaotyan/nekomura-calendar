@@ -1,0 +1,15 @@
+$pc: 900px;
+$ssp: 350px;
+
+
+@mixin pc {
+    @media screen and (min-width: $pc) {
+        @content;
+    }
+}
+
+@mixin ssp {
+    @media screen and (max-width: $ssp) {
+        @content;
+    }
+}
